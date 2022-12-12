@@ -30,16 +30,16 @@ function GenerateQRCode() {
 
         QRCodeContainer.innerHTML = "";
 
-        // new QRCode(QRCodeContainer, textQR);
+        new QRCode(QRCodeContainer, textQR);
 
-        new QRCode(QRCodeContainer, {
-            text: textQR,
-            width: sizeQR,
-            height: sizeQR,
-            colorDark: fillColor,
-            colorLight: boxColor,
-            correctLevel: QRCode.CorrectLevel.L
-        });
+        // new QRCode(QRCodeContainer, {
+        //     text: textQR,
+        //     width: sizeQR,
+        //     height: sizeQR,
+        //     colorDark: fillColor,
+        //     colorLight: boxColor,
+        //     correctLevel: QRCode.CorrectLevel.L
+        // });
 
         QRCodeSection.style.visibility = "visible";
     } else {
