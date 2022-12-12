@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/picture/alamkuIcon.png">
+    <title>AlamKu</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <header style="display: flex;">
+        <img src="assets/picture/alamkuLogo.png" alt="AlamKu" class="header-logo">
+        <nav class="navigation-list" id="navigation-menu">
+            <div class="ikon-header" onclick="showMenu(this)">
+                <a href="javascript:void(0);">
+                    <div class="first-bar"></div>
+                    <div class="second-bar"></div>
+                    <div class="third-bar"></div>
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#beranda" class="link">Beranda</a>
+                <a href="#tentang-kami" class="link">Tentang Kami</a>
+                <a href="#berita" class="link">Berita</a>
+                <a href="#donasi" class="link">Donasi</a>
+                <a href="#kontak-kami" class="link">Kontak Kami</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="beranda" class="flex-container">
+                <div class="animasi-beranda">
+                    <h2>Selamat Datang</h2>
+                    <h1>di AlamKu</h1>
+                    <p>Situs untuk kamu yang ingin menyelamatkan lingkungan sekitarmu.</p>
+                </div>
+                <img src="./assets/picture/panah.png" alt="Panah" class="panah">
+            </article>
+            <article id="tentang-kami">
+                <div class="artikel-tentang-kami animasi">
+                    <img src="./assets/picture/alamkuIcon.png" alt="Ikon AlamKu" class="icon-section" draggable="false">
+                    <h1>Apa itu AlamKu?</h1>
+                    <p>AlamKu merupakan sebuah media di dalam hutan internet yang mengajak kamu dan seluruh manusia di
+                        seluruh dunia untuk mengambil bagian dalam menjaga lingkungan sekitar dengan cara yang
+                        menyenangkan. Anda bisa melakukan donasi menggunakan KitaBisa yang digunakan untuk membeli pohon
+                        yang akan ditanam pada setiap tempat yang membutuhkan penghijauan kembali demi anak cucu kita
+                        semua.</p>
+                    <div class="flex-container gambar-tentang-kami">
+                        <img src="./assets/picture/aboutUsPicture1.png" alt="Gambar 1" draggable="false">
+                        <img src="./assets/picture/aboutUsPicture2.png" alt="Gambar 2" draggable="false">
+                        <img src="./assets/picture/aboutUsPicture3.png" alt="Gambar 3" draggable="false">
+                    </div>
+                </div>
+            </article>
+            <article id="berita">
+                <div class="artikel-berita animasi">
+                    <img src="./assets/picture/newsIcon.png" alt="Ikon Berita" class="icon-section" draggable="false">
+                    <h1>Berita AlamKu</h1>
+                    <div class="flex-container">
+                        <div class="box-berita">
+                            <img src="./assets/picture/gambarBerita1.jpg" alt="Gambar Berita" class="gambar-berita"
+                                draggable="false">
+                            <div class="konten-berita">
+                                <h3>AlamKu menyebar 1000 Bibit Pohon di Jakarta</h3>
+                                <input type="button" class="tombol-berita" value="Baca Selengkapnya">
+                            </div>
+                        </div>
+                        <div class="box-berita">
+                            <img src="./assets/picture/gambarBerita2.jpg" alt="Gambar Berita" class="gambar-berita"
+                                draggable="false">
+                            <div class="konten-berita">
+                                <h3>Bibit Pohon yang bisa Kamu Tanam untuk Tamanmu</h3>
+                                <input type="button" class="tombol-berita" value="Baca Selengkapnya">
+                            </div>
+                        </div>
+                        <div class="box-berita">
+                            <img src="./assets/picture/gambarBerita3.jpg" alt="Gambar Berita" class="gambar-berita"
+                                draggable="false">
+                            <div class="konten-berita">
+                                <h3>Kebahagiaanmu berasal dari Lingkungan Kamu</h3>
+                                <input type="button" class="tombol-berita" value="Baca Selengkapnya">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="donasi" class="flex-container">
+                <div class="artikel-donasi animasi">
+                    <img src="./assets/picture/donationIcon.png" alt="Ikon Donasi" class="icon-section"
+                        draggable="false">
+                    <h1>Donasi AlamKu</h1>
+                    <p>Anda dapat melakukan donasi menggunakan dua cara.</p>
+                    <h2>#1 Menggunakan Akun KitaBisa</h2>
+                    <p>Anda bisa melakukan donasi melalui portal KitaBisa menggunakan tombol berikut ini.</p>
+                    <div class="rekening">
+                        <div class="gambar-akun">
+                            <img src="./assets/picture/kitabisaLogo.png" alt="Logo KitaBisa" draggable="false">
+                        </div>
+                        <div class="definisi-akun">
+                            <p>Tautan menuju portal KitaBisa.com</p>
+                        </div>
+                    </div>
+                    <h2>#2 Menggunakan Akun Rekening</h2>
+                    <p>Anda juga bisa melakukan donasi melalui akun rekening berikut.</p>
+                    <div class="flex-container akun-rekening-donasi">
+                        <div class="rekening">
+                            <div class="gambar-akun">
+                                <img src="./assets/picture/bcaLogo.png" alt="Logo BCA" draggable="false">
+                            </div>
+                            <div class="definisi-akun">
+                                <p>1234567890</p>
+                                <p>a.n. AlamKu Peduli</p>
+                            </div>
+                        </div>
+                        <div class="rekening">
+                            <div class="gambar-akun">
+                                <img src="./assets/picture/bniLogo.png" alt="Logo BNI" draggable="false">
+                            </div>
+                            <div class="definisi-akun">
+                                <p>9012345678</p>
+                                <p>a.n. AlamKu Peduli</p>
+                            </div>
+                        </div>
+                        <div class="rekening">
+                            <div class="gambar-akun">
+                                <img src="./assets/picture/briLogo.png" alt="Logo BRI" draggable="false">
+                            </div>
+                            <div class="definisi-akun">
+                                <p>7890123456</p>
+                                <p>a.n. AlamKu Peduli</p>
+                            </div>
+                        </div>
+                        <div class="rekening">
+                            <div class="gambar-akun">
+                                <img src="./assets/picture/cimbLogo.png" alt="Logo CIMB Niaga" draggable="false">
+                            </div>
+                            <div class="definisi-akun">
+                                <p>5678901234</p>
+                                <p>a.n. AlamKu Peduli</p>
+                            </div>
+                        </div>
+                        <div class="rekening">
+                            <div class="gambar-akun">
+                                <img src="./assets/picture/mandiriLogo.png" alt="Logo Bank Mandiri" draggable="false">
+                            </div>
+                            <div class="definisi-akun">
+                                <p>3456789012</p>
+                                <p>a.n. AlamKu Peduli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="kontak-kami">
+                <div class="artikel-kontak-kami animasi">
+                    <img src="./assets/picture/contactIcon.png" alt="Ikon Kontak" class="icon-section"
+                        draggable="false">
+                    <h1>Kontak Kami</h1>
+                    <div class="flex-container" style="flex-wrap: wrap;">
+                        <div class="kontak-box">
+                            <h2>Alamat</h2>
+                            <p>Kebon Melati, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta
+                            </p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>Nomor Telepon</h2>
+                            <p>(021) 3906454</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>Alamat Surel</h2>
+                            <p>donasi@alamku.co.id</p>
+                        </div>
+                    </div>
+                    <div class="flex-container" style="flex-wrap: wrap;">
+                        <div class="kontak-box">
+                            <h2>Whatsapp</h2>
+                            <p>0812-3456-7890</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>Instagram</h2>
+                            <p>@alamkupeduli</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>Facebook</h2>
+                            <p>Sahabat AlamKu</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>Twitter</h2>
+                            <p>@alamkupeduli</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>TikTok</h2>
+                            <p>@alamkupeduli</p>
+                        </div>
+                        <div class="kontak-box">
+                            <h2>YouTube</h2>
+                            <p>Sahabat AlamKu</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <aside class="animasi">
+            <h1>Tentang Developer</h1>
+            <img src="./assets/picture/photo.png" alt="Foto Developer" draggable="false">
+            <p><b>Nama :</b> Adhitya Bagus Wicaksono</p>
+            <p><b>Email :</b> adhityabw0703@gmail.com</p>
+            <p><b>Domisili :</b> Kota Tangerang</p>
+            <p><b>Pekerjaan :</b> Mahasiswa</p>
+        </aside>
+    </main>
+    <footer>
+        <p>AlamKu &copy; 2022 by Adhitya Bagus Wicaksono</p>
+    </footer>
+
+    <script src="./assets/style/script.js"></script>
+</body>
+
+</html>

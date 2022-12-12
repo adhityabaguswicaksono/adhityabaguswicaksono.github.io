@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
+
+*{
+    scroll-padding-top: 100px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Kreon', serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4760BA;
+    border-radius: 10px;
+}
+
+body{
+    color: #4760BA;
+}
+
+.animasi{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+.animasi.gulir{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+main #beranda .animasi-beranda{
+    animation: animasi-beranda 0.5s ease-in-out;
+}
+
+@keyframes animasi-beranda {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+header{
+    height: 100px;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #4760BA;
+}
+
+.header-logo{
+    width: 150px;
+}
+
+nav .menu a{
+    display: inline-block;
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #4760BA;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+nav .menu a:hover{
+    background-color: #4760BA;
+    color: white;
+    align-self: auto;
+    border-radius: 10px;
+}
+
+nav .menu a.active{
+    background-color: #4760BA;
+    color: white;
+    border-radius: 10px;
+}
+
+nav .ikon-header{
+    display: none;
+    padding: 5px 10px;
+    border: 2px solid #4760BA;
+    border-radius: 10px;
+}
+
+.first-bar, .second-bar, .third-bar {
+    width: 35px;
+    height: 2px;
+    background-color: #4760BA;
+    margin: 9px 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.klik .first-bar{
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.klik .second-bar{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.klik .third-bar{
+    transform: rotate(-45deg) translate(9px, -8px);
+}
+
+.flex-container{
+    display: flex;
+}
+
+main #beranda{
+    position: relative;
+    padding: 30px;
+    background-image: url("../picture/homeBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#beranda h1{
+    font-size: 80px;
+}
+
+#beranda h2{
+    font-size: 36px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+p{
+    font-size: large;
+}
+
+#beranda .panah{
+    position: absolute;
+    top: calc(100vh - 100px);
+    width: 50px;
+    animation-name: panah;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+main #tentang-kami{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 75px 30px;
+    height: auto;
+}
+
+.artikel-tentang-kami{
+    line-height: 2;
+}
+
+.gambar-tentang-kami{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.gambar-tentang-kami img{
+    display: inline-block;
+    min-width: 150px;
+    flex-grow: 1;
+}
+
+.icon-section{
+    max-width: 150px;
+}
+
+@keyframes panah {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+main #berita{
+    padding: 75px 30px;
+    background-color: #4760BA;
+    color: white;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-berita{
+    flex: 1;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: white;
+    color:#4760BA;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.box-berita:hover{
+    box-shadow: 0 0 15px white;
+    transform: translateY(-5px);
+}
+
+.gambar-berita{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.konten-berita{
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol-berita{
+    padding: 10px;
+    min-width: 50%;
+    border-radius: 25px;
+    border: 2px solid #4760BA;
+    color: #4760BA;
+    background-color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tombol-berita:hover{
+    color: white;
+    background-color: #4760BA;
+}
+
+main #donasi{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 75px 30px;
+    height: auto;
+    line-height: 2;
+}
+
+.akun-rekening-donasi{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.artikel-donasi{
+    width: 100%;
+}
+
+.rekening{
+    flex-grow: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #4760BA;
+    background-color: white;
+    color: #4760BA;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-out 0.5s;
+}
+
+.rekening:hover{
+    box-shadow: 0 0 10px #4760BA;
+    transform: translateY(-5px);
+}
+
+.rekening .gambar-akun{
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-akun img{
+    max-width: 150px;
+}
+
+main #kontak-kami{
+    padding: 75px 30px;
+    background-color: #4760BA;
+    color: white;
+    line-height: 2;
+    text-align: center;
+}
+
+.kontak-box{
+    flex-grow: 1;
+    padding: 30px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.kontak-box:hover{
+    box-shadow: 0 0 10px white;
+    transform: translateY(-5px);
+}
+
+main aside{
+    padding: 75px 30px;
+    line-height: 2;
+    text-align: center;
+}
+
+aside img{
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    line-height: 2;
+    background-color: #4760BA;
+    color: white;
+}
+
+@media screen and (max-width: 781px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-berita{
+        width: inherit;
+        height: 200px;
+        align-items: center;
+    }
+
+    .gambar-berita{
+        max-width: 100%;
+        height: inherit;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .konten-berita{
+        padding: 0 20px 20px 20px;
+        width: 100%;
+    }
+
+    .gambar-tentang-kami img:not(:first-of-type){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav .ikon-header{
+        display: block;
+    }
+    nav .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navigation-list.responsif{
+        position: relative;
+        width: 100%;
+    }
+    nav .ikon-header{
+        float: right;
+    }
+    .navigation-list.responsif .menu{
+        position: absolute;
+        display: block;
+        width: inherit;
+        top: 90px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px #4760BA;
+    }
+    .navigation-list.responsif .menu a{
+        width: inherit;
+        display: block;
+        padding: 5px 10px;
+        text-align: right;
+    }
+    .navigation-list.responsif .menu a:first-of-type{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .navigation-list.responsif .menu a:last-of-type{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
