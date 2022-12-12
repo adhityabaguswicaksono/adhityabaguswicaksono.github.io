@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pembuat Kode QR merupakan sebuah web yang memudahkan Anda dalam membuat kode QR tanpa iklan dan tanpa ribet.">
+    <meta name="keywords" content="Kode QR, Generate, QR Code">
+    <meta name="author" content="Adhitya Bagus Wicaksono">
+
+    <title>Pembuat Kode QR - Adhitya Bagus Wicaksono</title>
+
+    <link rel="shortcut icon" href="./icon/adhityabaguswicaksono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./QRCodeGenerator/qrcode.min.js"></script>
+</head>
+
+<body>
+    <header class="header text-center">
+        <h1>Pembuat Kode QR</h1>
+    </header>
+    <div class="container">
+        <div class="section-class text-center">
+            <h3>Mengambil Data Kode QR</h3>
+            <form>
+                <div class="text-qr gap">
+                    <label for="textQR">Masukkan Kata/Kalimat</label><br>
+                    <textarea type="text" name="Text" id="textQR" oninput="AutoExpand(this)" required></textarea>
+                </div>
+                <div class="color-qr gap">
+                    <label for="fillColor">Pilih Warna Dasar Kode QR</label><br>
+                    <input type="color" name="Color Fill" id="fillColor" value="#3a7bd5">
+                </div>
+                <div class="color-qr gap">
+                    <label for="boxColor">Pilih Warna Bingkai Kode QR</label><br>
+                    <input type="color" name="Color Box" id="boxColor" value="#ffffff">
+                </div>
+                <div class="size-qr gap">
+                    <label for="sizeQR">Pilih Ukuran Kode QR</label><br>
+                    <div class="display-size-qr">
+                        <input type="range" name="Size" id="sizeQR" min="100" step="100" max="2000" value="300"
+                            oninput="TextSizeQR(this.value)">
+                        <p id="TextSizeQR">300 x 300 px</p>
+                    </div>
+                </div>
+                <div class="submit-qr gap">
+                    <input type="submit" value="Buat Kode QR" onclick="GenerateQRCode()">
+                </div>
+            </form>
+        </div>
+        <div class="section-class text-center">
+            <h3>Hasil Pembuatan Kode QR</h3>
+            <div id="QRCodeSection">
+                <div id="QRCode"></div><br>
+                <div id="actionButton">
+                    <a id="linkDownloadButton">
+                        <button type="button" id="downloadButton" onclick="DownloadQRCode()">Unduh Kode QR</button>
+                    </a>
+                    <button type="button" id="resetButton" onclick="ResetButton()">Buat Kode QR Baru</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <p>Dibuat oleh Adhitya Bagus Wicaksono</p>
+        <p>Sumber Kode Pembuatan Kode QR : <a href="https://github.com/davidshimjs/qrcodejs" target="_blank">Shim
+                Sangmin</a></p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <div class="form">
+        <h1>QR Code using qrcodejs</h1>
+        <form>
+            <input type="url" id="website" name="website" placeholder="https://webisora.com" required />
+            <button type="button" onclick="generateQRCode()">
+                Generate QR Code
+            </button>
+        </form>
+
+        <div id="qrcode-container">
+            <div id="qrcode" class="qrcode"></div>
+            <h4>With some styles</h4>
+            <div id="qrcode-2" class="qrcode"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function generateQRCode() {
+            let website = document.getElementById("website").value;
+            if (website) {
+                let qrcodeContainer = document.getElementById("qrcode");
+                qrcodeContainer.innerHTML = "";
+                new QRCode(qrcodeContainer, website);
+                /*With some styles*/
+                let qrcodeContainer2 = document.getElementById("qrcode-2");
+                qrcodeContainer2.innerHTML = "";
+                new QRCode(qrcodeContainer2, {
+                    text: website,
+                    width: 128,
+                    height: 128,
+                    colorDark: "#5868bf",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                document.getElementById("qrcode-container").style.display = "block";
+            } else {
+                alert("Please enter a valid URL");
+            }
+        }
+    </script>
+</body>
+
+</html> -->

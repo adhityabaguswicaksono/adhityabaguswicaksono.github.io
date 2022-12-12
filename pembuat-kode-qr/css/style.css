@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --blue-primary: #3a7bd5;
+    --blue-light: #a4caff;
+    --blue-dark: #104ea4;
+    --white: white;
+    --gray: rgb(200, 200, 200);
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header {
+    padding: 24px;
+    margin: 10px;
+    background-color: var(--blue-primary);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--blue-light);
+    color: var(--white);
+}
+
+.section-class {
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--blue-light);
+    color: var(--blue-primary);
+    line-height: 2;
+    width: auto;
+}
+
+.gap {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.text-qr textarea {
+    border: 1px solid var(--blue-primary);
+    border-radius: 5px;
+    resize: none;
+    height: 20px;
+    width: 90%;
+}
+
+.text-qr textarea:focus {
+    outline: none;
+    border: 2px solid var(--blue-dark);
+}
+
+.color-qr input {
+    border: 1px solid var(--blue-primary);
+    border-radius: 5px;
+    height: 25px;
+    background-color: var(--white);
+}
+
+.size-qr input {
+    accent-color: var(--blue-primary);
+    border-color: var(--blue-primary);
+}
+
+.display-size-qr {
+    display: block;
+    line-height: 0.5;
+}
+
+.submit-qr input {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    font-weight: bold;
+    border: 0;
+    padding: 8px;
+    transition: all 0.25s ease-in-out;
+}
+
+.submit-qr input:hover {
+    box-shadow: 0 3px 5px var(--blue-primary);
+}
+
+.submit-qr input:active {
+    box-shadow: 0 3px 5px var(--white);
+    color: var(--blue-primary);
+}
+
+#QRCode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#QRCode canvas {
+    display: none;
+}
+
+#QRCode img {
+    max-width: 225px;
+}
+
+#downloadButton {
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    font-weight: bold;
+    border: 0;
+    padding: 8px;
+    transition: all 0.25s ease-in-out;
+}
+
+#resetButton {
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--blue-primary);
+    font-weight: bold;
+    border: 1px solid var(--blue-primary);
+    padding: 8px;
+    transition: all 0.25s ease-in-out;
+}
+
+#downloadButton:hover,
+#resetButton:hover {
+    box-shadow: 0 3px 5px var(--blue-primary);
+}
+
+#downloadButton:active {
+    color: var(--blue-primary);
+}
+
+.footer {
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--blue-primary);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--blue-light);
+    color: var(--white);
+}
+
+a {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--gray);
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
