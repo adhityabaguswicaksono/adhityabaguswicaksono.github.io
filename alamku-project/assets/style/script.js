@@ -1,9 +1,9 @@
 // Membuat Navigation Bar menjadi responsif
-function showMenu(x){
+function showMenu(x) {
     x.classList.toggle("klik");
 
     var menu = document.getElementById("navigation-menu");
-    if(menu.className === "navigation-list"){
+    if (menu.className === "navigation-list") {
         menu.className += " responsif";
     } else {
         menu.className = "navigation-list";
@@ -12,12 +12,12 @@ function showMenu(x){
 
 // Membuat menu navigation bar di highlight ketika di klik
 const menu = document.querySelector(".menu");
-menu.addEventListener("click", function(menu){
+menu.addEventListener("click", function (menu) {
     const targetMenu = menu.target;
 
-    if(targetMenu.classList.contains('link')){
+    if (targetMenu.classList.contains('link')) {
         const menuActive = document.querySelector("nav .menu a.active");
-        if(menuActive !== null && targetMenu.getAttribute('href') !== menuActive.getAttribute('href')) {
+        if (menuActive !== null && targetMenu.getAttribute('href') !== menuActive.getAttribute('href')) {
             menuActive.classList.remove('active');
         }
         targetMenu.classList.add('active');
@@ -31,8 +31,7 @@ var throttleTimer = false;
 function throttle(callback, time) {
     if (throttleTimer) {
         return;
-    }
-    else {
+    } else {
         throttleTimer = true;
         setTimeout(() => {
             callback();
@@ -65,7 +64,7 @@ function handleScrollAnimation() {
     });
 }
 
-window.addEventListener("scroll", () => { 
+window.addEventListener("scroll", () => {
     throttle(() => {
         handleScrollAnimation();
     }, 250);
