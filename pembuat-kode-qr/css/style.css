@@ -55,7 +55,8 @@ body {
     border: 1px solid var(--blue-primary);
     border-radius: 5px;
     resize: none;
-    height: 20px;
+    height: 25px;
+    padding: 8px;
     width: 90%;
 }
 
