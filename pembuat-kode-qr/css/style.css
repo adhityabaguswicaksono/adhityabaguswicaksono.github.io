@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-    padding: 24px;
+    padding: 20px;
     margin: 10px;
     background-color: var(--blue-primary);
     border-radius: 10px;
@@ -35,7 +35,7 @@ body {
     color: var(--white);
 }
 
-.section-class {
+.content {
     padding: 15px;
     margin: 10px;
     background-color: white;
@@ -51,39 +51,35 @@ body {
     margin-bottom: 8px;
 }
 
-.text-qr textarea {
-    border: 1px solid var(--blue-primary);
-    border-radius: 5px;
-    resize: none;
-    height: 25px;
-    padding: 8px;
+.content .gap h4 {
+    margin-bottom: 0;
+}
+
+.content .gap #textQR {
     width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid var(--blue-primary);
 }
 
-.text-qr textarea:focus {
-    background-color: var(--blue-primary);
-    color: white;
-    outline: none;
+.content .gap #textQR:focus {
+    outline: 1px solid var(--blue-primary);
 }
 
-.color-qr input {
+.content .gap input {
     border: 1px solid var(--blue-primary);
     border-radius: 5px;
     height: 25px;
     background-color: var(--white);
 }
 
-.size-qr input {
+.content .gap input {
     accent-color: var(--blue-primary);
     border-color: var(--blue-primary);
 }
 
-.display-size-qr {
-    display: block;
-    line-height: 0.5;
-}
-
-.submit-qr button {
+.content .gap button {
     margin-top: 20px;
     border-radius: 10px;
     height: 35px;
@@ -96,26 +92,17 @@ body {
     transition: all 0.25s ease-in-out;
 }
 
-.submit-qr button:hover {
-    box-shadow: 0 3px 5px var(--blue-primary);
-}
-
-.submit-qr button:active {
-    box-shadow: 0 3px 5px var(--white);
-    color: var(--blue-primary);
-}
-
-#QRCode {
+#QRCodeContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#QRCode canvas {
+#QRCodeContainer canvas {
     display: none;
 }
 
-#QRCode img {
+#QRCodeContainer img {
     max-width: 225px;
 }
 
@@ -129,27 +116,6 @@ body {
     border: 0;
     padding: 8px;
     transition: all 0.25s ease-in-out;
-}
-
-#resetButton {
-    border-radius: 10px;
-    height: 35px;
-    cursor: pointer;
-    background-color: var(--white);
-    color: var(--blue-primary);
-    font-weight: bold;
-    border: 1px solid var(--blue-primary);
-    padding: 8px;
-    transition: all 0.25s ease-in-out;
-}
-
-#downloadButton:hover,
-#resetButton:hover {
-    box-shadow: 0 3px 5px var(--blue-primary);
-}
-
-#downloadButton:active {
-    color: var(--blue-primary);
 }
 
 .footer {

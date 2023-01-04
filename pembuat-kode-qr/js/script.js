@@ -1,17 +1,61 @@
-const QRCodeSection = document.getElementById("QRCodeSection");
+const textQR = document.querySelector("#textQR");
+const fillColor = document.querySelector("#fillColor");
+const boxColor = document.querySelector("#boxColor");
+const sizeQR = document.querySelector("#sizeQR");
+const QRCodeContainer = document.querySelector("#QRCodeContainer");
+const linkDownloadButton = document.querySelector("#linkDownloadButton");
 
-document.addEventListener("DOMContentLoaded", function () {
-    QRCodeSection.style.visibility = "hidden";
+const defaultUrl = textQR.getAttribute("placeholder");
+let colorLight = fillColor.value,
+    colorDark = boxColor.value,
+    text = defaultUrl,
+    size = 300;
+
+textQR.addEventListener("input", function (e) {
+    text = e.target.value;
+    if (text.length == 0) {
+        text = defaultUrl;
+    }
 });
 
-function AutoExpand(element) {
-    element.style.height = "0";
-    element.style.height = (element.scrollHeight) + "px";
+fillColor.addEventListener("input", function (e) {
+    colorLight = e.target.value;
+});
+
+boxColor.addEventListener("input", function (e) {
+    colorDark = e.target.value;
+});
+
+sizeQR.addEventListener("input", function (e) {
+    size = e.target.value;
+})
+
+async function generateQRCode() {
+    QRCodeContainer.innerHTML = "";
+    new QRCode(QRCodeContainer, {
+        text,
+        height: size,
+        width: size,
+        colorLight,
+        colorDark,
+        correctLevel: QRCode.CorrectLevel.L
+    });
+
+    linkDownloadButton.href = await downloadQRCode();
 }
 
-function ResetButton() {
-    event.preventDefault();
-    window.location.reload();
+function downloadQRCode() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const img = document.querySelector("#QRCodeContainer img");
+            if (img.currentSrc) {
+                resolve(img.currentSrc);
+                return;
+            }
+            const canvas = document.querySelector("canvas");
+            resolve(canvas.toDataURL());
+        }, 50);
+    });
 }
 
 function TextSizeQR(value) {
@@ -19,42 +63,5 @@ function TextSizeQR(value) {
     TextSizeQR.innerHTML = `${value} x ${value} px`;
 }
 
-function GenerateQRCode() {
-    event.preventDefault();
-    const textQR = document.getElementById("textQR").value;
-
-    if (textQR) {
-        const QRCodeContainer = document.getElementById("QRCode");
-        const sizeQR = document.getElementById("sizeQR").value;
-        const fillColor = document.getElementById("fillColor").value;
-        const boxColor = document.getElementById("boxColor").value;
-
-        QRCodeContainer.innerHTML = "";
-
-        // new QRCode(QRCodeContainer, textQR);
-
-        new QRCode(QRCodeContainer, {
-            text: textQR,
-            width: sizeQR,
-            height: sizeQR,
-            colorDark: fillColor,
-            colorLight: boxColor,
-            correctLevel: QRCode.CorrectLevel.L
-        });
-
-        QRCodeSection.style.visibility = "visible";
-    } else {
-        alert("Masukkan Kalimatnya dulu ya...");
-    }
-}
-
-function DownloadQRCode() {
-    const QRCodeContainer = document.getElementById("QRCode");
-    const image = QRCodeContainer.children[1].src;
-    const downloadButton = document.getElementById("downloadButton");
-
-    const linkDownloadButton = document.getElementById("linkDownloadButton");
-    linkDownloadButton.setAttribute("href", image);
-    linkDownloadButton.setAttribute("download", "Pembuat Kode QR - Adhitya Bagus Wicaksono.png");
-    linkDownloadButton.appendChild(downloadButton);
-}
+generateQRCode();
+downloadQRCode();

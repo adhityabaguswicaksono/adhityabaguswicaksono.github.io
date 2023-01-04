@@ -1,101 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Pembuat Kode QR merupakan sebuah web yang memudahkan Anda dalam membuat kode QR tanpa iklan dan tanpa ribet.">
+    <meta name="keywords" content="Kode QR, Generate, QR Code">
+    <meta name="author" content="Adhitya Bagus Wicaksono">
+
+    <title>Pembuat Kode QR - Adhitya Bagus Wicaksono</title>
+
+    <link rel="shortcut icon" href="./icon/adhityabaguswicaksono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>QR Code</h1>
-    <input type="text" id="textQR" placeholder="QR Code Text">
-    <input type="color" id="fillColor">
-    <input type="color" id="boxColor">
-    <input type="range" id="sizeQR" min="100" max="3000" step="100" value="300">
+    <div class="header text-center">
+        <h1>Pembuat Kode QR</h1>
+    </div>
+    <div class="container">
+        <div class="content text-center">
+            <h3>Mengambil Data Kode QR</h3>
+            <div class="gap">
+                <h4><label for="textQR">Masukkan Kata/Kalimat</label></h4>
+                <input type="text" id="textQR" placeholder="https://adhityabaguswicaksono.github.io/">
+            </div>
+            <div class="gap">
+                <h4><label for="fillColor">Pilih Warna Dasar Kode QR</label></h4>
+                <input type="color" name="Color Fill" id="fillColor" value="#ffffff">
+            </div>
+            <div class="gap">
+                <h4><label for="boxColor">Pilih Warna Bingkai Kode QR</label></h4>
+                <input type="color" name="Color Box" id="boxColor" value="#3a7bd5">
+            </div>
+            <div class="gap">
+                <h4><label for="sizeQR">Pilih Ukuran Kode QR</label></h4>
+                <div>
+                    <input type="range" name="Size" id="sizeQR" min="100" step="100" max="3000" value="300"
+                        oninput="TextSizeQR(this.value)"><br>
+                    <span id="TextSizeQR">300 x 300 px</span>
+                </div>
+            </div>
+            <div class="gap">
+                <button onclick="generateQRCode()">Buat QR Code</button>
+            </div>
+        </div>
 
-    <div id="QRCodeContainer"></div>
-    <a href="" id="linkDownloadButton" download>
-        <button id="downloadButton">Download</button>
-    </a>
+        <div class="content text-center">
+            <h3>Hasil Pembuatan Kode QR</h3>
+            <div id="QRCodeContainer"></div>
+            <br>
+            <a href="" id="linkDownloadButton" download="Pembuat Kode QR - Adhitya Bagus Wicaksono">
+                <button id="downloadButton">Download</button>
+            </a>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <p>Dibuat oleh Adhitya Bagus Wicaksono</p>
+        <p>Sumber Kode Pembuatan Kode QR : <a href="https://github.com/davidshimjs/qrcodejs" target="_blank">Shim
+                Sangmin</a></p>
+    </footer>
 
     <script src="./QRCodeGenerator/qrcode.min.js"></script>
-    <script>
-        const textQR = document.querySelector("#textQR");
-        const fillColor = document.querySelector("#fillColor");
-        const boxColor = document.querySelector("#boxColor");
-        const sizeQR = document.querySelector("#sizeQR");
-        const QRCodeContainer = document.querySelector("#QRCodeContainer");
-        const downloadButton = document.querySelector("#downloadButton");
-        const linkDownloadButton = document.querySelector("#linkDownloadButton");
-        const canvas = document.getElementById('canvas');
-
-        const defaultUrl = "https://adhityabaguswicaksono.github.io/";
-        let colorLight = "#fff",
-            colorDark = "#000",
-            text = defaultUrl,
-            size = 300;
-
-        textQR.addEventListener("input", function (e) {
-            text = e.target.value;
-            if (text.length == 0) {
-                text = defaultUrl;
-            }
-            generateQRCode();
-            downloadQRCode();
-        });
-
-        fillColor.addEventListener("input", function (e) {
-            colorLight = e.target.value;
-            generateQRCode();
-            downloadQRCode();
-        });
-
-        boxColor.addEventListener("input", function (e) {
-            colorDark = e.target.value;
-            generateQRCode();
-            downloadQRCode();
-        });
-
-        sizeQR.addEventListener("input", function (e) {
-            size = e.target.value;
-            generateQRCode();
-            downloadQRCode();
-        })
-
-        async function generateQRCode() {
-            QRCodeContainer.innerHTML = "";
-            new QRCode(QRCodeContainer, {
-                text,
-                height: size,
-                width: size,
-                colorLight,
-                colorDark,
-                correctLevel: QRCode.CorrectLevel.L
-            });
-
-            linkDownloadButton.href = await downloadQRCode();
-        }
-
-        function downloadQRCode() {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    const img = document.querySelector("#QRCodeContainer img");
-                    if (img.currentSrc) {
-                        resolve(img.currentSrc);
-                        return;
-                    }
-                    const canvas = document.querySelector("canvas");
-                    resolve(canvas.toDataURL());
-                }, 50);
-            });
-        }
-
-        generateQRCode();
-        downloadQRCode();
-    </script>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
