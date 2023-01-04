@@ -98,9 +98,9 @@ body {
     justify-content: center;
 }
 
-#QRCodeContainer canvas {
+/* #QRCodeContainer canvas {
     display: none;
-}
+} */
 
 #QRCodeContainer img {
     max-width: 225px;
