@@ -98,9 +98,10 @@ body {
     justify-content: center;
 }
 
-/* #QRCodeContainer canvas {
-    display: none;
-} */
+#QRCodeContainer canvas {
+    max-width: 225px;
+    max-height: 225px;
+}
 
 #QRCodeContainer img {
     max-width: 225px;
