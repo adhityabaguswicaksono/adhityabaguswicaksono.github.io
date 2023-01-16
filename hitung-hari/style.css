@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --green: rgb(182, 255, 239);
+    --white: white;
+    --black: rgb(29, 29, 29);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    color: var(--black);
+}
+
+body {
+    background-color: rgb(148, 232, 214);
+}
+
+.mega-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    border: 2px var(--black) solid;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+header {
+    padding: 24px;
+    background-color: var(--green);
+    text-align: center;
+}
+
+.formulir {
+    padding: 24px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 2;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.form .pilihan {
+    width: 200px;
+    text-align: center;
+    margin: 12px;
+}
+
+.form .pilihan select {
+    margin-top: 8px;
+    width: inherit;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 50px;
+    border: 2px var(--black) solid;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.submit input[type="submit"] {
+    padding: 8px 16px;
+    background-color: var(--green);
+    outline: none;
+    border: 0px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.hasil {
+    padding: 24px;
+    background-color: var(--green);
+    line-height: 2;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    border: 0;
+    background-color: var(--black);
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        background-color: var(--green);
+    }
+
+    .container {
+        border: 0 var(--black) solid;
+        border-radius: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .form {
+        flex-flow: column;
+    }
+}

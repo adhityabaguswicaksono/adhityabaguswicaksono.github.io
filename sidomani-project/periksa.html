@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periksa - SI DOMANI (Sistem Pakar Diagnosis Malnutrisi Anak Balita)</title>
+    <link rel="shortcut icon" href="./picture/sidomaniIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/periksa.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="./picture/sidomaniBlue.png" alt="spinner">
+    </div>
+    <header>
+        <a href="./index.html" class="header-picture">
+            <img src="./picture/sidomaniWhite.png" alt="Logo SI DOMANI">
+        </a>
+        <nav class="navigation-list" id="navigation-menu">
+            <div class="toggle-menu" id="bar-menu" onclick="showMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="detail-menu">
+                <ul>
+                    <li><a href="./index.html" class="">Beranda</a></li>
+                    <li><a href="./periksa.html" class="active">Periksa</a></li>
+                    <li><a href="./tutorial.html" class="">Tutorial</a></li>
+                    <li><a href="./tentang.html" class="">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="wrapper">
+            <div>
+                <div id="header">
+                    <h1>Selamat Datang di<br>Formulir Diagnosis Malnutrisi Anak Balita</h1>
+                </div>
+                <div id="formulir">
+                    <p>Silakan mengetuk tombol di bawah ini untuk memulai pengisian diagnosis malnutrisi anak Anda.
+                        Jawablah secara jujur agar mendapatkan hasil diagnosis dan penanganan yang tepat untuk anak
+                        Anda.</p>
+                </div>
+                <div id="button">
+                    <input type="button" value="Mulai" id="play">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Dibuat pada Tahun 2023</p>
+    </footer>
+
+    <script src="./js/all.js"></script>
+    <script src="./js/logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+TG01:
+[GG01-0, GG02-0, GG03-0, GG04-0, GG05-0, GG06-0, GG07-0];
+
+TG02:
+[GG01-0, GG02-0, GG08-0, GG09-0, GG10-0, GG11-0, GG12-0];
+
+TG03:
+[GG01-0, GG02-0, GG13-0, GG14-0, GG15-0];
+
+TG04:
+[GG01-1, GG02-1, GG16-0, GG17-0, GG18-0, GG19-0, GG20-0]
+
+TG05:
+[GG01-2, GG02-2, GG21-0, GG22-0, GG23-0, GG24-0, GG25-0]
+
+TG06:
+[GG01-3, GG02-3, GG26-0, GG27-0, GG28-0, GG29-0, GG30-0]
+
+[{
+    "kodeUtama": "tingkat-gizi",
+    "isiKodeUtama": [{
+        "kode": "TG01",
+        "isiKode": "Gizi Buruk Kwashiorkor"
+    }, {
+        "kode": "TG02",
+        "isiKode": "Gizi Buruk Marasmus"
+    }, {
+        "kode": "TG03",
+        "isiKode": "Gizi Buruk Marasmus-Kwashiorkor"
+    }, {
+        "kode": "TG04",
+        "isiKode": "Gizi Kurang"
+    }, {
+        "kode": "TG05",
+        "isiKode": "Gizi Baik"
+    }, {
+        "kode": "TG06",
+        "isiKode": "Gizi Lebih"
+    }]
+}, {
+    "kodeUtama": "gejala-gizi",
+    "isiKodeUtama": [{
+        "kode": "GG01",
+        "isiSoal": "Berapakah berat badan anak Anda?",
+        "isiJawaban": [
+            "< 12,4 kg", 
+            "≥ 12,4 kg - < 14,1 kg", 
+            "≥ 14,1 kg - < 24,2 kg", 
+            "≥ 24,2 kg"
+        ]
+    }, {
+        "kode": "GG02",
+        "isiSoal": "Berapakah tinggi badan anak Anda?",
+        "isiJawaban": [
+            "< 96,1 cm",
+            "≥ 96,1 cm - < 100,7 cm",
+            "≥ 100,7 cm - < 119,2 cm",
+            "≥ 119,2 cm"
+        ]
+    }, {
+        "kode": "GG03",
+        "isiSoal": "Apakah terjadi pembengkakan pada punggung kaki anak Anda?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG04",
+        "isiSoal": "Apakah terjadi pembulatan pada wajah dan sembap pada anak Anda?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG05",
+        "isiSoal": "Apakah pandangan mata anak Anda terlihat kuyu dan sayu?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG06",
+        "isiSoal": "Apakah rambut anak Anda tipis, jarang, dan rapuh?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG07",
+        "isiSoal": "Apakah anak Anda menderita anemia, diare dan disertai penyakit infeksi?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG08",
+        "isiSoal": "Apakah anak Anda memiliki badan yang sangat kurus?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG09",
+        "isiSoal": "Apakah anak Anda mudah menangis/cengeng dan rewel?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG10",
+        "isiSoal": "Apakah anak Anda memiliki kulit yang mengeriput?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG11",
+        "isiSoal": "Apakah anak Anda memiliki penyakit infeksi?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG12",
+        "isiSoal": "Apakah anak Anda memiliki diare kronik atau konstipasi?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG13",
+        "isiSoal": "Apakah anak Anda memiliki tubuh yang mengandung lebih banyak cairan?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG14",
+        "isiSoal": "Apakah anak Anda memiliki kadar Kalium di dalam tubuh yang menurun drastis?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG15",
+        "isiSoal": "Apakah anak Anda memiliki berat badan yang kurang dari 60% dari berat badan normal?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG16",
+        "isiSoal": "Apakah anak Anda tidak memiliki nafsu makan?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG17",
+        "isiSoal": "Apakah anak Anda sangat mudah untuk marah, terlihat lesu, dan dapat menangis berlebihan?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG18",
+        "isiSoal": "Apakah anak Anda memunculkan tanda gangguang penglihatan?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG19",
+        "isiSoal": "Apakah anak Anda memiliki bentuk tulang kaki O atau X?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG20",
+        "isiSoal": "Apakah anak Anda memiliki perkembangan intelektual dan perilaku yang lambat?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG21",
+        "isiSoal": "Apakah anak Anda memiliki indeks massa tubuh (IMT) yang normal?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG22",
+        "isiSoal": "Apakah anak Anda memiliki kekuatan untuk menghadapi serangan penyakit?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG23",
+        "isiSoal": "Apakah anak Anda memiliki aktivitas buang air besar yang teratur?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG24",
+        "isiSoal": "Apakah anak Anda memiliki tubuh yang kuat dan kencang?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG25",
+        "isiSoal": "Apakah anak Anda memiliki nafsu makan yang baik?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG26",
+        "isiSoal": "Apakah anak Anda memiliki wajah bulat dengan pipi tembem dan dagu rangkap?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG27",
+        "isiSoal": "Apakah anak Anda memiliki leher yang relatif pendek?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG28",
+        "isiSoal": "Apakah anak Anda memiliki dada membusung dengan payudara yang membesar?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG29",
+        "isiSoal": "Apakah anak Anda memiliki perut yang membuncit?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }, {
+        "kode": "GG30",
+        "isiSoal": "Apakah anak Anda memiliki alat kelamin yang kecil?",
+        "isiJawaban": [
+            "Ya",
+            "Tidak"
+        ]
+    }]
+}, {
+    "kodeUtama": "solusi-gizi",
+    "isiKodeUtama": [{
+        "kode": "SG01",
+        "isiKode":[
+            "Berikan ASI eksklusif",
+            "MPASI sesuai dengan umur",
+            "Berikan makanan bervariasi dan seimbang",
+            "Pemberian makan sesuai fase (fase stabilitasi, transisi dan rehabilitasi)",
+            "Berikan sumpelmen (Zink, Fe, Vitamin A)",
+            "Segera temui ahli gizi setempat",
+            "Rutin melakukan penimbangan BB, TB dan lingkar kepala di posyandu"
+        ]
+    }, {
+        "kode": "SG02",
+        "isiKode":[
+            "Pemberian makanan dengan gizi seimbang", 
+            "Berikan makanan dalam porsi kecil tetapi sering", 
+            "Berikan ASI eksklusif", 
+            "Berikan imunisasi lengkap", 
+            "Rutin melakukan penimbangan BB, TB dan lingkar kepala di posyandu"
+        ]
+    }, {
+        "kode": "SG03",
+        "isiKode":[
+            "Pertahankan gaya hidup sehat",
+            "Pertahankan pemberian makanan dengan gizi seimbang",
+            "Pertahankan pemberian ASI eksklusif", 
+            "Pertahankan pemberian imunisasi lengkap", 
+            "Pertahankan pola makan teratur/Gizi seimbang"
+        ]
+    }, {
+        "kode": "SG04",
+        "isiKode":[
+            "Ajarkan gaya hidup sehat",
+            "Ajak anak melakukan aktifitas fisik",
+            "Terapkan pola makan teratur/Gizi seimbang",
+            "Hindari makanan instan dan junk food"
+        ]
+    }]
+}]
