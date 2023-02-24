@@ -8,4 +8,4 @@ Saya merupakan seorang mahasiswa program studi Informatika dari Universitas Mult
 
 Anda dapat melihat seluruh hal yang telah saya lakukan dalam web personal saya di [adhityabaguswicaksono.github.io](https://adhityabaguswicaksono.github.io). Silahkan kunjungi webnya ya!!!
 
-###### Pembaruan Terakhir 03 Februari 2023
+###### Pembaruan Terakhir 25 Februari 2023
