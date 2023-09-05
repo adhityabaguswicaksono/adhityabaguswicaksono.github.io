@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web Adhitya Bagus Wicaksono
 
-## Getting Started
+Halo semuanya! Perkenalkan, nama saya Adhitya Bagus Wicaksono.
 
-First, run the development server:
+Saya merupakan mahasiswa tingkat akhir program studi Informatika dari Universitas Multimedia Nusantara. Saya memilki spesialisasi dalam bidang UI/UX Designer dan Front End Website Developer selama 2 tahun. Memiliki pengetahuan mengenai pengembangan web seperti React JS dan Next JS serta UI/UX Design menggunakan Figma. Telah melakukan 7+ pengembangan web dan 5+ pembuatan tampilan antarmuka (UI). Dapat manajemen waktu, komunikasi, dan kerja tim yang baik.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Anda dapat melihat seluruh hal yang telah saya lakukan dalam web saya di [adhityabaguswicaksono.github.io](https://adhityabaguswicaksono.github.io). Silahkan kunjungi webnya ya...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###### Pembaruan Terakhir: 05 September 2023
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Adhitya Bagus Wicaksono Website
 
-## Learn More
+Hello everybody! My name is Adhitya Bagus Wicaksono from Indonesia.
 
-To learn more about Next.js, take a look at the following resources:
+I am a final year student of Informatics study program from Universitas Multimedia Nusantara. I have specialized in UI/UX Designer and Front End Website Developer for 2 years. Have knowledge of web development such as React JS and Next JS and UI/UX Design using Figma. Have done 7+ web development and 5+ UI development. Good time management, communication, and teamwork skills.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can see all the things I have done on my website at[adhityabaguswicaksono.github.io](https://adhityabaguswicaksono.github.io). See you there!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+###### Last Update: 05 September 2023
