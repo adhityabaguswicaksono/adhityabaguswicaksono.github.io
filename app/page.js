@@ -276,7 +276,8 @@ export default function Home() {
 								return (
 									<div
 										data-aos="fade-up"
-										key={dataMap.nama}>
+										key={dataMap.nama}
+										className="flex items-stretch">
 										<div className="group relative w-36 md:h-36 bg-white text-abw-500 p-8 flex flex-col gap-4 justify-center items-center md:-skew-x-12">
 											<Image
 												src={dataMap.gambar}
@@ -470,8 +471,9 @@ export default function Home() {
 								return (
 									<div
 										data-aos="fade-up"
-										key={dataMap.platformSosialMedia}>
-										<div className="w-full md:max-w-[400px] bg-white text-abw-500 p-8 flex flex-col gap-4 justify-center items-center border border-abw-500 md:-skew-x-12">
+										key={dataMap.platformSosialMedia}
+										className="w-full md:max-w-xl">
+										<div className="w-full bg-white text-abw-500 p-8 flex flex-col gap-4 justify-center items-center border border-abw-500 md:-skew-x-12">
 											<div className="w-[175px] h-[175px] bg-abw-500 text-white flex justify-center items-center md:skew-x-12">
 												<p className="text-6xl">
 													<i className={dataMap.gambar}></i>

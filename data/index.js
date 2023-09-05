@@ -109,7 +109,7 @@ export const APIData = [
 					nama: 'TailwindCSS',
 				},
 				{
-					gambar: '/picture/keahlian/booTstrapcss.svg',
+					gambar: '/picture/keahlian/bootstrapcss.svg',
 					nama: 'BoostrapCSS',
 				},
 				{
@@ -485,7 +485,7 @@ export const APIData = [
 					nama: 'TailwindCSS',
 				},
 				{
-					gambar: '/picture/keahlian/booTstrapcss.svg',
+					gambar: '/picture/keahlian/bootstrapcss.svg',
 					nama: 'BoostrapCSS',
 				},
 				{
