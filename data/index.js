@@ -313,7 +313,7 @@ export const APIData = [
 					tautanWeb: '-',
 				},
 				{
-					gambar: '/picture/riwayat-proyek/myMaps.png',
+					gambar: '/picture/riwayat-proyek/mymaps.png',
 					judulProyek: 'Web MyMaps',
 					posisiProyek: 'UI/UX Designer & Front End Website Developer',
 					tautanPrototipe: '-',
@@ -691,7 +691,7 @@ export const APIData = [
 					tautanWeb: '-',
 				},
 				{
-					gambar: '/picture/riwayat-proyek/myMaps.png',
+					gambar: '/picture/riwayat-proyek/mymaps.png',
 					judulProyek: 'MyMaps Website',
 					posisiProyek: 'UI/UX Designer & Front End Website Developer',
 					tautanPrototipe: '-',
