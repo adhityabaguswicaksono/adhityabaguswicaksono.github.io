@@ -227,7 +227,7 @@ export const APIData = [
 					tautanWeb: 'https://loyalty-sucor-sekuritas-demo.vercel.app/',
 				},
 				{
-					gambar: '/picture/riwayat-proyek/sidomani.png',
+					gambar: '/picture/riwayat-proyek/siDomani.png',
 					judulProyek:
 						'Web SI DOMANI (Sistem Pakar Diagnosis Malnutrisi Anak Balita)',
 					posisiProyek: 'UI/UX Designer & Front End Website Developer',
@@ -605,7 +605,7 @@ export const APIData = [
 					tautanWeb: 'https://loyalty-sucor-sekuritas-demo.vercel.app/',
 				},
 				{
-					gambar: '/picture/riwayat-proyek/sidomani.png',
+					gambar: '/picture/riwayat-proyek/siDomani.png',
 					judulProyek:
 						'SI DOMANI (Sistem Pakar Diagnosis Malnutrisi Anak Balita) Website',
 					posisiProyek: 'UI/UX Designer & Front End Website Developer',
