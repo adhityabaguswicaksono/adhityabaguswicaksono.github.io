@@ -218,6 +218,15 @@ export const APIData = [
 					tautanWeb: 'https://adhityabaguswicaksono.github.io',
 				},
 				{
+					gambar: '/picture/riwayat-proyek/mkk.png',
+					judulProyek: 'Web Mega Karya Konstruksi',
+					posisiProyek: 'UI/UX Designer',
+					tautanPrototipe:
+						'https://www.figma.com/file/zPhiaHqKnK8tXptaBNO3wW/Portofolio-Adhitya-Bagus-Wicaksono?type=design&node-id=260%3A859&mode=design&t=E9djhGS9ZPwyc1dv-1',
+					tautanGithub: '-',
+					tautanWeb: '-',
+				},
+				{
 					gambar: '/picture/riwayat-proyek/loyaltySucorSekuritas.png',
 					judulProyek: 'Web Loyalty Sucor Sekuritas',
 					posisiProyek: 'UI/UX Designer & Front End Website Developer',
@@ -594,6 +603,15 @@ export const APIData = [
 					tautanGithub:
 						'https://github.com/adhityabaguswicaksono/adhityabaguswicaksono.github.io',
 					tautanWeb: 'https://adhityabaguswicaksono.github.io',
+				},
+				{
+					gambar: '/picture/riwayat-proyek/mkk.png',
+					judulProyek: 'Mega Karya Konstruksi Landing Page Website',
+					posisiProyek: 'UI/UX Designer',
+					tautanPrototipe:
+						'https://www.figma.com/file/zPhiaHqKnK8tXptaBNO3wW/Portofolio-Adhitya-Bagus-Wicaksono?type=design&node-id=260%3A859&mode=design&t=E9djhGS9ZPwyc1dv-1',
+					tautanGithub: '-',
+					tautanWeb: '-',
 				},
 				{
 					gambar: '/picture/riwayat-proyek/loyaltySucorSekuritas.png',
